@@ -40,4 +40,4 @@ jobs:
         with:
           distribution: 'temurin' # See 'Supported distributions' for available options
           java-version: '21'
-      - run: java ./src/test/java/com/example
+      - run: java src/test/java/com/example/AppTest.java
