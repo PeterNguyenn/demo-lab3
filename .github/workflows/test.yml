@@ -1,0 +1,22 @@
+name: test-demo-proj
+on: push
+
+jobs:
+  job1:
+    name: first job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step one
+        uses: actions/checkout@v4
+      - name: Step two
+        run: ls -la
+      - run: pwd
+
+  job2:
+    name: second job
+    runs-on: windows-latest
+    steps:
+      - name: Step one of job 2
+        uses: actions/checkout@v4
+      - name: Step two /2
+        run: pwd
