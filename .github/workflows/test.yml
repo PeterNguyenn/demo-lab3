@@ -32,7 +32,7 @@ jobs:
       - run: env
 
   job3:
-    name: third job
+    name: test job
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
